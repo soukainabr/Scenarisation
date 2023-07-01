@@ -29,19 +29,19 @@ userSchema.statics.signup = async function(email,password,firstName,lastName) {
 
     // Validation
     if(!email || !password || !firstName || !lastName) {
-        throw Error('All fields must be filled');
+        throw Error('Tous les champs doivent être remplis');
     }
     if(!validator.isEmail(email)){
-        throw Error('Email is not valid')
+        throw Error("L'email n'est pas valide")
     }
     if(!validator.isStrongPassword(password)){
-        throw Error('Password not strong enough')
+        throw Error('Mot de passe pas assez fort')
     }
 
     const exists = await this.findOne({email});
 
     if(exists){
-        throw Error('Email already in use');
+        throw Error('Email déjà utilisé');
     }
 
     //salt : random string characters tha gets added to the user pwd before it gets hashed
@@ -59,18 +59,18 @@ userSchema.statics.login = async function(email,password){
     
     // Validation
     if(!email || !password) {
-        throw Error('All fields must be filled');
+        throw Error('Tous les champs doivent être remplis');
     }
     const user = await this.findOne({email});
 
     if(!user){
-        throw Error('Incorrect Email');
+        throw Error('Email Incorrect ');
     }
 
     const match = await bcrypt.compare(password, user.password);
 
     if (!match) {
-        throw Error('Incorrect password')
+        throw Error('Mot de passe Incorrect')
     }
 
     return user;

@@ -1,0 +1,212 @@
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+  padding-left: 100px;
+  background-color: #a3a3a34a;
+}
+
+.project-details {
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 3px 3px 2px 2px rgba(181, 180, 180, 0.9);
+
+}
+
+.text {
+  color: darkblue;
+  margin-left: 50px;
+}
+
+.project-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: rgba(250, 59, 59, 0.929);
+  text-decoration: underline rgba(250, 59, 59, 0.929);
+}
+
+.project-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+  
+}
+
+.project-details span {
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  color: #333;margin-left: 10px;
+}
+
+label,
+input {
+  display: block;
+}
+
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button {
+  background: darkblue;
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 140px;
+  margin-top: 20px;
+}
+
+.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid red;
+  color: red;
+  border-radius: 4px;
+  margin: 20px 0;
+  width: 300px;
+  padding-left: 50px;
+  margin-left: 50px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-btn {
+  background-color: #f1f1f1;
+  border: none;
+  color: #333;
+  padding: 8px 16px;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.pagination-btn:hover {
+  background-color: #ddd;
+}
+
+.pagination-btn.active {
+  background-color: rgba(250, 59, 59, 0.929);
+  color: #fff;
+}
+
+.icons-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 15px ;
+}
+
+.project-image{
+  height:100px;
+  width:100px;
+  box-shadow: 1px 1px 1px 1px rgba(237, 133, 133, 0.9);
+
+}
+
+/* auth forms */
+.signup-login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(108, 108, 255, 0.377);
+  border-radius: 4px;
+}
+.cont {
+  position: relative;
+  height: 100vh; /* Ajustez la hauteur selon vos besoins */
+}
+
+.bottom-left-button {
+  position: absolute;
+  bottom: 10px; /* Ajustez la valeur selon votre préférence */
+  left: 10px; /* Ajustez la valeur selon votre préférence */
+}
+
+.button{
+  margin-left: 640px;
+  color: white;
+  background-color: darkblue;
+  border-color: darkblue;
+  border-radius: 10px;
+  height: max-content;
+  width: max-content;
+  
+}
+button:hover {
+  background-color: white;
+  color: darkblue;
+
+}
+.details-column{
+  margin-left: -40px;
+}
+
+NavLink:hover{
+  color: darkblue;
+  background-color: chartreuse;
+}
+
+.textNav{
+  color: blue;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.b{
+  color: white;
+  background-color: darkblue;
+  border-color: darkblue;
+  border-radius: 10px;
+  height: fit-content;
+  width: fit-content;
+  margin-left: 10px;
+}
+
+.q{
+  color: white;
+  background-color: darkblue;
+  border-color: darkblue;
+  border-radius: 10px;
+  height: fit-content;
+  width: fit-content;
+  margin-left: 490px;
+}
+.video{
+  margin-left: 70px;
+}
+
+.space-between-buttons {
+  margin-left: 10px;
+}
+
+.style{
+  text-align: center;
+  text-decoration: underline;
+  margin-left: 200px;
+    font-size: 3rem;
+    letter-spacing: 0.9px;
+    color: darkblue;
+
+}

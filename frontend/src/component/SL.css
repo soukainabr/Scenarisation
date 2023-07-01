@@ -1,0 +1,54 @@
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+background-color: rgba(144, 227, 250, 0.39);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+
+.tt{
+    padding-left: 2rem; padding-right: 2.5rem;background-color: darkblue;font-weight: bold;
+    color: white;
+}
+.ttt{
+    text-align: center;
+}
+.t{
+    text-align: center;
+    color: darkblue;
+    text-decoration: underline;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(22, 142, 197, 0.288);
+}
+.border{
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.form-label{
+    color: darkblue;
+    text-decoration: underline;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(22, 142, 197, 0.288);
+   
+}
+.error1 {
+    padding: 10px;
+    background: #ffefef;
+    border: 1px solid red;
+    color: red;
+    border-radius: 4px;
+    margin: 20px 0;
+    width: 300px;
+    margin-left: 50px;
+    text-align: center;
+  }
+  

@@ -1,0 +1,19 @@
+.footer{
+    background-color: #0a234f;
+
+}
+
+i{
+    height: 20px;
+    width: 20px;
+}
+h5{
+    color: lightblue;
+
+}
+i:hover{
+    color: lightblue;
+}
+.img{
+    margin-left: -80px;
+}

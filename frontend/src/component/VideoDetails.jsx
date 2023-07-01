@@ -124,7 +124,7 @@ const VideoDetails = ({ video }) => {
       </div>
 
       <Dialog open={editDialogOpen} onClose={handleCancel} aria-labelledby="edit-capsule-dialog-title">
-        <DialogTitle id="edit-capsule-dialog-title">Edit Video</DialogTitle>
+        <DialogTitle id="edit-capsule-dialog-title" className="text">Modifier Video</DialogTitle>
         {error && <div className="error">Titre et Description et video sont obligatoires</div>}
         <DialogContent>
           <TextField

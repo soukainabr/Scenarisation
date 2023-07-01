@@ -113,7 +113,7 @@ const CapsuleDetails = ({ capsule }) => {
       </div>
 
       <Dialog open={editDialogOpen} onClose={handleCancel} aria-labelledby="edit-capsule-dialog-title">
-        <DialogTitle id="edit-capsule-dialog-title">Edit Capsule</DialogTitle>
+        <DialogTitle id="edit-capsule-dialog-title" className="text">Modifier Capsule</DialogTitle>
         <DialogContent>
           <TextField
             autoFocus

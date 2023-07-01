@@ -13,7 +13,7 @@ const CollaborateurForm = ({ onAddCollaborateur, onClose }) => {
 
   return (
     <Dialog open={true} onClose={onClose}>
-      <DialogTitle>Ajouter un Collaborateur</DialogTitle>
+      <DialogTitle className="text">Ajouter un Collaborateur</DialogTitle>
       <DialogContent>
         <form onSubmit={handleSubmit}>
           <TextField

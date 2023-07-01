@@ -101,7 +101,7 @@ const CollaborateurDetails = ({ collaborateur }) => {
       </div>
 
       <Dialog open={editDialogOpen} onClose={handleCancel} aria-labelledby="edit-collaborateur-dialog-title">
-        <DialogTitle id="edit-collaborateur-dialog-title">Edit Collaborateur </DialogTitle>
+        <DialogTitle id="edit-collaborateur-dialog-title" className="text">Modifier Collaborateur </DialogTitle>
         <DialogContent>
           <TextField
             autoFocus

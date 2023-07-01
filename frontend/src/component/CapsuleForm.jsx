@@ -17,7 +17,7 @@ const CapsuleForm = ({ onAddCapsule, onClose }) => {
 
   return (
     <Dialog open={true} onClose={onClose}>
-      <DialogTitle>Créer une nouvelle capsule</DialogTitle>
+      <DialogTitle className="text">Créer une nouvelle capsule</DialogTitle>
       <DialogContent>
         <form onSubmit={handleSubmit}>
           <TextField

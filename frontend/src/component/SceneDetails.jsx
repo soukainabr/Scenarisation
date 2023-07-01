@@ -125,7 +125,7 @@ const SceneDetails = ({ scene }) => {
       </div>
 
       <Dialog open={editDialogOpen} onClose={handleCancel} aria-labelledby="edit-capsule-dialog-title">
-        <DialogTitle id="edit-capsule-dialog-title">Edit Scene</DialogTitle>
+        <DialogTitle id="edit-capsule-dialog-title" className="text"  >Modifier Scene</DialogTitle>
         <DialogContent>
           <TextField
             autoFocus

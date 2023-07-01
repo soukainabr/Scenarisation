@@ -24,7 +24,7 @@ const VideoForm = ({ onAddVideo, onClose }) => {
 
     return (
         <Dialog open={true} onClose={onClose}>
-            <DialogTitle>Créer une nouvelle video</DialogTitle>
+            <DialogTitle className="text">Créer une nouvelle video</DialogTitle>
            
             <DialogContent>
                 <form onSubmit={handleSubmit}>

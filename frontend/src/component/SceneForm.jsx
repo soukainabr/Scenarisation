@@ -21,7 +21,7 @@ const SceneForm = ({ onAddScene, onClose }) => {
 
   return (
     <Dialog open={true} onClose={onClose}>
-      <DialogTitle>Créer une nouvelle scene</DialogTitle>
+      <DialogTitle className="text">Créer une nouvelle scene</DialogTitle>
       <DialogContent>
         <form onSubmit={handleSubmit}>
           <TextField

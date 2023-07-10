@@ -16,10 +16,10 @@ const videoRoutes = require('./routes/video');
 const app = express()
 
 //middleware
-app.use(cors())
+app.use(cors())//Com
 app.use(express.json())
-app.use('/uploads',express.static('uploads'));
-app.use('/uploads/media', express.static('uploads/media'));
+app.use('/uploads',express.static('uploads'));//Image
+app.use('/uploads/media', express.static('uploads/media'));//Video
 
 
 

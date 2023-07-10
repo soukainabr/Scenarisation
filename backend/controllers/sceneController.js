@@ -49,23 +49,23 @@ const deleteSceneByCapsuleId = (req, res) => {
 
 const deleteSceneByCapsuleId = async (req, res) => {
     try {
-      const capsuleId = req.params.id;
-      const sceneId = req.params.id2;
-  
-      // Supprimer les vidéos liées à la scène
-      await Video.deleteMany({ scene_id: sceneId });
-  
-      // Supprimer les scènes_collaborateur liées à la scène
-      await SceneCollaborateur.deleteMany({ scene_id: sceneId });
-  
-      // Supprimer la scène
-      await Scene.findOneAndDelete({ capsule_id: capsuleId, _id: sceneId });
-  
-      res.json('La scène a été supprimée avec succès, ainsi que les scènes_collaborateur et vidéos correspondantes.');
+        const capsuleId = req.params.id;
+        const sceneId = req.params.id2;
+
+        // Supprimer les vidéos liées à la scène
+        await Video.deleteMany({ scene_id: sceneId });
+
+        // Supprimer les scènes_collaborateur liées à la scène
+        await SceneCollaborateur.deleteMany({ scene_id: sceneId });
+
+        // Supprimer la scène
+        await Scene.findOneAndDelete({ capsule_id: capsuleId, _id: sceneId });
+
+        res.json('La scène a été supprimée avec succès, ainsi que les scènes_collaborateur et vidéos correspondantes.');
     } catch (error) {
-      res.status(400).json('Erreur lors de la suppression de la scène : ' + error);
+        res.status(400).json('Erreur lors de la suppression de la scène : ' + error);
     }
-  };
+};
 
 const updateSceneByCapsuleId = (req, res) => {
     const capsuleId = req.params.id;
@@ -80,6 +80,7 @@ const updateSceneByCapsuleId = (req, res) => {
         });
 };
 
+//      Not Used
 const getSceneBySceneIdAndCapsuleId = (req, res) => {
     const capsuleId = req.params.id;
     const sceneId = req.params.id2;

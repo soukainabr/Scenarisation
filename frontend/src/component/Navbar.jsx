@@ -6,12 +6,14 @@ import { useLogout } from '../hooks/useLogout';
 import { useAuthContext } from '../hooks/useAuthContext';
 import './Projects.css';
 
+
 const Navbar = () => {
   const { logout } = useLogout();
   const { user } = useAuthContext();
   const handleClick = () => {
     logout()
   }
+  
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top shadow-sm">
       <div className="container">

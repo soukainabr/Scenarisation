@@ -44,7 +44,7 @@ userSchema.statics.signup = async function(email,password,firstName,lastName) {
         throw Error('Email déjà utilisé');
     }
 
-    //salt : random string characters tha gets added to the user pwd before it gets hashed
+    //salt : random string characters that gets added to the user pwd before it gets hashed
     const salt = await bcrypt.genSalt(10);
     const hash = await bcrypt.hash(password,salt);
 

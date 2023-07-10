@@ -5,11 +5,11 @@ const NotFound = () => {
     return (
         <div className='ppp'>
             <br /><br />  <br /><br />  <br /><br />
-            <title>Page Not Found</title>
+            <title>Page Introuvable</title>
             <img src="https://i.ibb.co/W6tgcKQ/softcodeon.gif" alt='img'/>
-            <h1 class="error-text">Whoops, We can't seem to find the resource you're looking for.</h1>
+            <h1 class="error-text">Whoops, Page Indisponible !!!!!!!</h1>
             <div class="btn1">
-                <a class="error" href="/">Go to Homepage</a>
+                <a class="error" href="/">Acceuil</a>
             </div>
             <br /><br />  <br /><br />
         </div>
